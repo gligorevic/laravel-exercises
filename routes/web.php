@@ -19,4 +19,4 @@ Route::get('/', function () {
 
 Route::get("/home", function () {
     return "Home route";
-});
+})->middleware('checkAge');
